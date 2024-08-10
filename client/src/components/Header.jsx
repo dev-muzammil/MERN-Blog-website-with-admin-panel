@@ -11,7 +11,7 @@ const Header = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const handleSignout = async () => {
-    const res = await axios.get("http://localhost:3000/api/auth/signout");
+    const res = await axios.get("https://mern-blog-website-with-admin-panel-api.vercel.app/api/auth/signout");
     if (res.status === 200) {
       dispatch(signOut());
       navigate("/sign-in");
