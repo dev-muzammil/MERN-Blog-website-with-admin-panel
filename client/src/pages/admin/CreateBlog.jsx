@@ -18,7 +18,7 @@ const CreateBlog = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/data/create-blog",
+        "https://mern-blog-website-with-admin-panel-api.vercel.app/api/data/create-blog",
         form
       );
       const message = res.data.message
