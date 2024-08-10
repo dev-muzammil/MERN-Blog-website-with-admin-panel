@@ -5,8 +5,7 @@ import BlogCard from "../components/BlogCard";
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
   const getBlogs = async () => {
-    const res = await axios.get("https://mern-blog-website-with-admin-panel-api.vercel.app
-/api/data/get-blogs");
+    const res = await axios.get("https://mern-blog-website-with-admin-panel-api.vercel.app/api/data/get-blogs");
     const data = res.data.data;
     setBlogs(data);
   };
