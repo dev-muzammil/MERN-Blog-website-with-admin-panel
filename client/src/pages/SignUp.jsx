@@ -22,7 +22,7 @@ const SignUp = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/auth/signup",
+        "https://mern-blog-website-with-admin-panel-api.vercel.app/api/auth/signup",
         user
       );
       const data = res.data;
