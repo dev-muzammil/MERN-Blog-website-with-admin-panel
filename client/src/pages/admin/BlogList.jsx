@@ -6,7 +6,7 @@ const BlogList = () => {
   const [blogs, setBlogs] = useState([]);
   const [alert, setAlert] = useState(null);
   const getBlogs = async () => {
-    const res = await axios.get("http://localhost:3000/api/data/get-blogs");
+    const res = await axios.get("https://mern-blog-website-with-admin-panel-api.vercel.app/api/data/get-blogs");
     const data = res.data.data;
     setBlogs(data);
   };
@@ -17,7 +17,7 @@ const BlogList = () => {
 
   const handleDelete = async (id) => {
     const res = await axios.delete(
-      `http://localhost:3000/api/data/delete-blog/${id}`
+      `https://mern-blog-website-with-admin-panel-api.vercel.app/api/data/delete-blog/${id}`
     );
     console.log(res);
     setAlert(res.data.message);
