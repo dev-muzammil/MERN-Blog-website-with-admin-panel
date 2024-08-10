@@ -7,7 +7,7 @@ const BlogDetail = () => {
   const { id } = useParams();
   const getBlogDetails = async () => {
     const res = await axios.get(
-      `mern-blog-website-with-admin-panel-api.vercel.app
+      `https://mern-blog-website-with-admin-panel-api.vercel.app
 /api/data/blog-details/${id}`
     );
     const data = res.data.blog;
