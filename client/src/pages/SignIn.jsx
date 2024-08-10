@@ -28,7 +28,7 @@ const SignIn = () => {
     try {
       dispatch(signInStart());
       const res = await axios.post(
-        "http://localhost:3000/api/auth/signin",
+        "https://mern-blog-website-with-admin-panel-api.vercel.app/api/auth/signin",
         user
       );
       const data = res.data;
